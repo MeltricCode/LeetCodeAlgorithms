@@ -50,5 +50,24 @@ namespace LongestCommonPrefix.Algorithm
                 return "";
             return strs[0].Substring(0, lastSameIndex + 1);
         }
+
+        public string LongestCommonPrefixV2(string[] strs)
+        {
+            if (strs == null || strs.Length == 0)
+                return "";
+
+            string prefix = strs[0];
+
+            for (int i = 1; i < strs.Length; i++)
+            {
+                while (!strs[i].StartsWith(prefix))
+                {
+                    prefix = prefix.Substring(0, prefix.Length - 1);
+                    if (string.IsNullOrEmpty(prefix))
+                        return "";
+                }
+            }
+            return prefix;
+        }
     }
 }
