@@ -8,7 +8,7 @@ namespace ValidParentheses.Algorithm
 {
     public class ItemValidatorV1
     {
-        public bool IsValid(string input)
+        public bool IsValid(string input) //the performance is 16ms
         {
 
 
