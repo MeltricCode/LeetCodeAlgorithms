@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using ValidParentheses.Algorithm;
+﻿using ValidParentheses.Algorithm;
+
+//Problem url: https://leetcode.com/problems/valid-parentheses/
 
 //ItemValidatorV1 validator1 = new();
 ItemValidatorV2 validator2 = new();
