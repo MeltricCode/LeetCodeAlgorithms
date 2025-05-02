@@ -16,6 +16,34 @@ namespace MergeTwoSortedLists.Algorithm
             this.val = val;
             this.next = next;
         }
+        public ListNode Clone()
+        {
+            ListNode dummy = new();
+            ListNode current = dummy;
+            ListNode source = this;
+
+            while (source != null)
+            {
+                current.next = new(source.val);
+                current = current.next;
+                source = source.next;
+            }
+            return dummy.next;
+        }
+        public override string ToString()
+        {
+            ListNode clone = Clone();
+            string str = "[";
+            str += clone.val + ",";
+            while (clone.next != null)
+            {
+                str += clone.next.val + ",";
+                clone.next = clone.next.next;
+            }
+            str = str.Remove(str.Length - 1);
+            str += "]";
+            return str;
+        }
     }
 
     public class Sorter
@@ -26,7 +54,7 @@ namespace MergeTwoSortedLists.Algorithm
             ListNode current = dummy;
             while (list1 != null && list2 != null)
             {
-                if(list1.val == list2.val)
+                if (list1.val == list2.val)
                 {
                     current.next = new(list1.val);
                     current = current.next;

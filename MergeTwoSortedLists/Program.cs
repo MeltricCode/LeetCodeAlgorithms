@@ -18,4 +18,6 @@ var l33 = new ListNode(5);
 l11.next = l22;
 l22.next = l33;
 
-Console.WriteLine(sorter.MergeTwoLists(l1, l11));
+ListNode result = sorter.MergeTwoLists(l1, l11);
+
+Console.WriteLine($"The result is: {result}");

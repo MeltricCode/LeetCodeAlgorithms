@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D5BB8E2-5A84-4D1E-99BF-72920BAB1FF7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{AE4E5546-7DCB-49FA-8840-965A3460CB5A}"
-	ProjectSection(SolutionItems) = preProject
-		.gitkeep = .gitkeep
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Normal", "Normal", "{4411052B-80E3-4A1E-AC2E-45212AFE00AF}"
 EndProject
