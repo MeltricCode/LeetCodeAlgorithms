@@ -8,18 +8,18 @@ namespace RemoveElement.Algorithm
 {
     public class ElementRemover
     {
-        public int RemoveElement(int[] nums, int val)
+        public int RemoveElement(int[] nums, int val) //the performance is 0ms
         {
-            int i = 0;
-            for (int j = 0; j < nums.Length; j++)
+            int k = 0;
+            for (int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] != val)
                 {
-                    nums[i] = nums[j];
-                    i++;
+                    nums[k] = nums[i];
+                    k++;
                 }
             }
-            return i;
+            return k;
         }
     }
 }
