@@ -13,7 +13,7 @@ namespace RemoveElement.Algorithm
             int i = 0;
             for (int j = 0; j < nums.Length; j++)
             {
-                if (nums[i] != nums[j])
+                if (nums[i] != val)
                 {
                     nums[i] = nums[j];
                     i++;
