@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LongestCommonPrefix.Algorithm
+namespace EasyAlgorithms.Algorithm.LongestCommonPrefix
 {
+    // Problem url: https://leetcode.com/problems/longest-common-prefix/
     public class Prefix
     {
         public static string LongestCommonPrefixV1(string[] strs)

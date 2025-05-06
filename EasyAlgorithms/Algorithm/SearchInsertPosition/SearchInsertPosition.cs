@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyAlgorithms.Algorithm
+namespace EasyAlgorithms.Algorithm.SearchInsertPosition
 {
+    // Problem url: https://leetcode.com/problems/search-insert-position/
     public class SearchInsertPosition
     {
         public static int SearchInsert(int[] nums, int target) //the performance is 0ms
         {
             int low = 0;
-            int high = (nums.Length - 1);
+            int high = nums.Length - 1;
 
             while (low <= high)
             {
