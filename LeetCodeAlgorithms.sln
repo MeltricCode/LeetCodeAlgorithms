@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Med.", "Med.", "{B70E7E04-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAlgorithms", "EasyAlgorithms\EasyAlgorithms.csproj", "{124B874D-6466-4C06-A2D6-A86FC02E3130}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedAlgorithms", "MedAlgorithms\MedAlgorithms.csproj", "{F75A4250-177C-425D-875E-213C875405DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{124B874D-6466-4C06-A2D6-A86FC02E3130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{124B874D-6466-4C06-A2D6-A86FC02E3130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{124B874D-6466-4C06-A2D6-A86FC02E3130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75A4250-177C-425D-875E-213C875405DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75A4250-177C-425D-875E-213C875405DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75A4250-177C-425D-875E-213C875405DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75A4250-177C-425D-875E-213C875405DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +38,6 @@ Global
 		{4411052B-80E3-4A1E-AC2E-45212AFE00AF} = {8D5BB8E2-5A84-4D1E-99BF-72920BAB1FF7}
 		{B70E7E04-F37A-47AF-A0D5-D205BE86B50D} = {8D5BB8E2-5A84-4D1E-99BF-72920BAB1FF7}
 		{124B874D-6466-4C06-A2D6-A86FC02E3130} = {AE4E5546-7DCB-49FA-8840-965A3460CB5A}
+		{F75A4250-177C-425D-875E-213C875405DE} = {B70E7E04-F37A-47AF-A0D5-D205BE86B50D}
 	EndGlobalSection
 EndGlobal
