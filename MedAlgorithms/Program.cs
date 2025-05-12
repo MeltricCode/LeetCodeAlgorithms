@@ -12,4 +12,4 @@ ListNode l23 = new(4);
 l2.next = l22;
 l2.next.next = l23;
 
-ListNodeAddTwoReverseNumber.AddTwoNumbers(l1, l2);
+Console.WriteLine(ListNodeAddTwoReverseNumberV3.AddTwoNumbers(l1, l2));
