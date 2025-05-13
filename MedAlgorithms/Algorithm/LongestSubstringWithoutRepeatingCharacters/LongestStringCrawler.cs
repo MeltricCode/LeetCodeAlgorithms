@@ -9,7 +9,7 @@ namespace MedAlgorithms.Algorithm.LongestSubstringWithoutRepeatingCharacters
     //Probblem url: https://leetcode.com/problems/longest-substring-without-repeating-characters
     public class LongestStringCrawler
     {
-        public static int LengthOfLongestSubstring(string s) //The performance is 6ms
+        public static int LengthOfLongestSubstring(string s) //The performance is 6ms (Solved with sliding window algorithm)
         {
             HashSet<char> charSet = new HashSet<char>();
             int left = 0, maxLength = 0;
