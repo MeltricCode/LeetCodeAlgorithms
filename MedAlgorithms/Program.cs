@@ -1,4 +1,6 @@
 ﻿using MedAlgorithms.Algorithm.AddTwoNumbers;
+using MedAlgorithms.Algorithm.LongestPalindromicSubstring;
 using MedAlgorithms.Algorithm.LongestSubstringWithoutRepeatingCharacters;
 
-Console.WriteLine(LongestStringCrawler.LengthOfLongestSubstring("abcabcbb"));
+PalindromFinder pf = new();
+Console.WriteLine(pf.LongestPalindrome("cbbd"));
