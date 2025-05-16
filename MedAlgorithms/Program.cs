@@ -1,4 +1,3 @@
-﻿using MedAlgorithms.Algorithm.LongestPalindromicSubstring;
+﻿using MedAlgorithms.Algorithm.ReverseInteger;
 
-PalindromFinder pf = new();
-Console.WriteLine(pf.LongestPalindrome("cbbd"));
+Console.WriteLine(IntReverser.Reverse(1534236469));
