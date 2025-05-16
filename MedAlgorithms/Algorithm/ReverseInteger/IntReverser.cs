@@ -31,7 +31,7 @@ namespace MedAlgorithms.Algorithm.ReverseInteger
                     builder.Append(number[i]);
                 }
             }
-            return int.Parse(builder.ToString());
+            return int.Parse(builder.ToString()); // has problem on larger int
         }
     }
 }
