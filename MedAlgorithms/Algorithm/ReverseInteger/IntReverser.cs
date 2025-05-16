@@ -9,7 +9,7 @@ namespace MedAlgorithms.Algorithm.ReverseInteger
     //Problem url: https://leetcode.com/problems/reverse-integer
     public class IntReverser
     {
-        public static int Reverse(int x)
+        public static int Reverse(int x) // the performance is 20ms
         {
             if (x < 10 && x > -10)
                 return x;
@@ -31,7 +31,12 @@ namespace MedAlgorithms.Algorithm.ReverseInteger
                     builder.Append(number[i]);
                 }
             }
-            return int.Parse(builder.ToString()); // has problem on larger int
+            int result;
+            if (int.TryParse(builder.ToString(), out result)) 
+            {
+                return result;
+            }
+            return 0;
         }
     }
 }
