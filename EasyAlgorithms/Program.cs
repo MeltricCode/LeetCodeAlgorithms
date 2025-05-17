@@ -1,3 +1,11 @@
-﻿using EasyAlgorithms.Algorithm.LengthOfLastWord;
+﻿using EasyAlgorithms.Algorithm.PlusOne;
 
-Console.WriteLine(LastWorld.LengthOfLastWord("luffy is still joyboy")); // should return 6
+string result = "[";
+foreach (var item in LastIndexPlusOne.PlusOne([9]))
+{
+    result += item + ",";
+}
+
+result = result.Remove(result.Length - 1);
+result += ']';
+Console.WriteLine(result);
