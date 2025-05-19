@@ -5,7 +5,6 @@ foreach (var item in LastIndexPlusOne.PlusOne([9]))
 {
     result += item + ",";
 }
-
 result = result.Remove(result.Length - 1);
 result += ']';
 Console.WriteLine(result);
