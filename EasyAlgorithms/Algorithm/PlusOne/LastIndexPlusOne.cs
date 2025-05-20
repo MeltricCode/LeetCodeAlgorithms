@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,26 +10,23 @@ namespace EasyAlgorithms.Algorithm.PlusOne
     //problem url: https://leetcode.com/problems/plus-one
     public class LastIndexPlusOne
     {
-        public static int[] PlusOne(int[] digits)
+        //this impl has bad performance because of BigInteger
+        //I should use Carry, Sum approach to solve it
+        public static int[] PlusOne(int[] digits) // the performance is 19ms 
         {
-            int index = digits.Length - 1;
-
-            if (digits[index] == 9)
+            StringBuilder builder = new();
+            foreach (int digit in digits)
             {
-                var array = new int[digits.Length + 1];
-                for(int i = 0; i<digits.Length; i++)
-                {
-                    array[i] = digits[i];
-                }
-                array[index] = 1;
-                array[index + 1] = 0;
-                return array;
+                builder.Append(digit);
             }
-            else
+            BigInteger resultNumber = BigInteger.Parse(builder.ToString()) + 1;
+            string resultStr = resultNumber.ToString();
+            int[] result = new int[resultStr.Length];
+            for(int i = 0; i< resultStr.Length; i++)
             {
-                digits[index]++;
-                return digits;
+                result[i] = int.Parse(resultStr[i].ToString());
             }
+            return result;
         }
     }
 }
