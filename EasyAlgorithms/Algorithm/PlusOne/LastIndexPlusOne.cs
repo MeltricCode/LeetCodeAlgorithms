@@ -12,7 +12,7 @@ namespace EasyAlgorithms.Algorithm.PlusOne
     {
         //this impl has bad performance because of BigInteger
         //I should use Carry, Sum approach to solve it
-        public static int[] PlusOne(int[] digits) // the performance is 19ms 
+        public static int[] PlusOne(int[] digits) // the performance is 21ms 
         {
             StringBuilder builder = new();
             foreach (int digit in digits)
